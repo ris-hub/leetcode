@@ -20,13 +20,17 @@ At time 10, person 1 shares the secret with person 5.​​​​
 Thus, people 0, 1, 2, 3, and 5 know the secret after all the meetings.
 
 Approach:
-- Write your approach here
+- Group all meetings by their time in increasing order.
+- Track which people know the secret using a boolean array, initially marking person 0 and firstPerson as knowing the secret.
+- For each time, build a graph of people who meet at that time.
+- Start BFS from people who already know the secret at that time, spreading the secret to others in the same time group.
+- After processing all meetings, return the list of people who know the secret.
 
-Time Complexity: O()
-Space Complexity: O()
+Time Complexity: ~O(M*(M+N)) where M = number of meetings and N = number of people
+Space Complexity: O(M+N)
 
 Tags:
-Revisit: No
+Revisit: Yes
 */
 
 class Solution {
