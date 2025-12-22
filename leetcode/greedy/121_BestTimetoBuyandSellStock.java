@@ -16,7 +16,7 @@ Time Complexity: O(n), where n is the number of days (length of prices array). W
 Space Complexity: O(1), as we use only a constant amount of extra space.
 
 Tags: Array, Greedy
-Revisit: No
+Revisit: Yes
 */
 
 class Solution {
