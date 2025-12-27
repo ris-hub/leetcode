@@ -1,4 +1,4 @@
-package leetcode.greedy;
+package leetcode.arrays.greedy;
 
 /*
 LeetCode 2483 - Minimum Penalty for a Shop
